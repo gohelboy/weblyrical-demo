@@ -1,0 +1,43 @@
+.demo {
+    width: 100%;
+    max-height: 100dvh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 100dvh;
+
+    .info {
+        max-height: 100dvh;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+    }
+
+    .lyrics-box {
+        max-height: 60dvh;
+        overflow: auto;
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        transition: all 0.2s ease;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        .current-line {
+            transition: all 0.2s ease;
+            opacity: 1;
+        }
+
+        .line {
+            transition: all 0.2s ease;
+            opacity: 0.2;
+        }
+    }
+
+}
